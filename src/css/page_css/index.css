@@ -1,0 +1,71 @@
+.body__background {
+  background: url(../../img/welcome-page/bg-gradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px;
+  height: 97vh;
+  z-index: 1;
+}
+.welcome_grass,
+.welcome_tree,
+.welcome_farm_windmill,
+.welcome_windmill_fan,
+.welcome_mountain,
+.welcome_cloud_left,
+.welcome_cloud_right {
+  position: absolute;
+}
+.welcome_grass {
+  left: 0vh;
+  bottom: 0;
+  z-index: 3;
+}
+.welcome_tree {
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+  width: 1920px;
+}
+.welcome_farm_windmill {
+  left: 251px;
+  bottom: 270px;
+  z-index: 6;
+}
+.welcome_windmill_fan {
+  left: 343px;
+  bottom: 307px;
+  z-index: 5;
+  animation: spin 1.5s linear infinite;
+  animation-delay: 2s;
+}
+.welcome_mountain {
+  left: 0;
+  bottom: 221px;
+  z-index: 3;
+}
+.welcome_cloud_left {
+  left: 0;
+  bottom: 146px;
+  z-index: 2;
+  animation: cloud_left 3s linear infinite;
+  animation-delay: 2s;
+}
+.welcome_cloud_right {
+  right: 0;
+  bottom: 96px;
+  z-index: 2;
+  animation: cloud_right 3s linear infinite;
+  animation-delay: 2s;
+}
+.title_welcome
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 10;
+}
+.title_welcome h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}

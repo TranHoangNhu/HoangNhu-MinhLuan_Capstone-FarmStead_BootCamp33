@@ -1,0 +1,29 @@
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cloud_left {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes cloud_right {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 50px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+  }
+}

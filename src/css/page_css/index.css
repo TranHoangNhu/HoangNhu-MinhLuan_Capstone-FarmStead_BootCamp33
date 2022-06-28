@@ -1,3 +1,4 @@
+/* BACKGROUND-ANIMATION */
 .body__background {
   background: url(../../img/welcome-page/bg-gradient.png);
   background-repeat: no-repeat;
@@ -57,15 +58,173 @@
   animation: cloud_right 3s linear infinite;
   animation-delay: 2s;
 }
-.title_welcome
-{
-    width: 100%;
-    text-align: center;
-    padding-top: 50px;
-    z-index: 10;
+/* END-BACKGROUND-ANIMATION */
+.container_welcome {
+  padding-top: 50px;
+  z-index: 9;
+}
+.title_welcome {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
 }
 .title_welcome h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 800;
   font-size: 70px;
 }
+/* CONTENT-CREATOR */
+.nhu_content_creator,
+.luan_content_creator {
+  z-index: 10;
+}
+.content_creator h3 {
+  font-family: "Volkhov", serif;
+  color: #111222;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+.content_creator .nhu_content_creator h3 {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
+}
+.content_creator .luan_content_creator h3 {
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+}
+.content_creator a {
+  color: RoyalBlue;
+  font-weight: normal;
+  text-decoration: none;
+}
+.content_creator a:hover {
+  color: CornflowerBlue;
+}
+
+/* Circle Avatar Styles */
+
+.content_creator .circle {
+  line-height: 0; /* remove line-height */
+  display: inline-block; /* circle wraps image */
+  margin: 5px;
+  border: 4px solid rgba(200, 200, 200, 0.4);
+  border-radius: 50%; /* relative value */
+  /*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+  transition: linear 0.25s;
+  height: 128px;
+  width: 128px;
+}
+.content_creator .circle img {
+  border-radius: 50%; /* relative value for
+				   adjustable image size */
+}
+.content_creator .circle:hover {
+  transition: ease-out 0.2s;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  transition: ease-out 0.2s;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  opacity: 0.9;
+}
+/* End Circle Avatar Styles */
+/* END-CONTENT-CREATOR */
+.content_creator a.circle {
+  color: transparent;
+}
+/* NAV-FARMSTEAD */
+.nav_FarmStead .wrapper li {
+  z-index: 10;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 8px 18px;
+  margin: 10px;
+  font-size: 16px;
+  opacity: .8;
+  line-height: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon a{
+ text-decoration: none;
+ font-weight: bold;
+ color: rgb(81, 81, 81);
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: auto;
+  font-size: 16px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 7px 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: #ffffff;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  border-radius: 10px;
+}
+.wrapper .icon:hover .fixtooltip
+{
+  top: -49px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  border-radius: 10px;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .create_by_nhu:hover,
+.wrapper .create_by_nhu:hover a,
+.wrapper .create_by_nhu:hover .tooltip,
+.wrapper .create_by_nhu:hover .tooltip::before {
+  background-image: radial-gradient(
+  circle farthest-corner at 10% 20%,
+  rgba(255, 209, 67, 1) 0%,
+  rgba(255, 145, 83, 1) 90%
+);
+  color: #ffffff;
+}
+
+.wrapper .create_by_luan:hover,
+.wrapper .create_by_luan:hover a,
+.wrapper .create_by_luan:hover .tooltip,
+.wrapper .create_by_luan:hover .tooltip::before {
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+  color: #ffffff;
+}
+/* END-NAV-FARMSTEAD */

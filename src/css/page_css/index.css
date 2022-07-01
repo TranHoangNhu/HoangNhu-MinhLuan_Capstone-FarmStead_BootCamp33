@@ -1,4 +1,8 @@
 /* BACKGROUND-ANIMATION */
+body
+{
+  overflow: hidden;
+}
 .body__background {
   background: url(../../img/welcome-page/bg-gradient.png);
   background-repeat: no-repeat;

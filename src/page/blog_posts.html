@@ -21,7 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <!--END CSS LIBRARY -->
   <!-- INCLUDE TEMPLATE HTML -->
-  <script src="template html/import.js"></script>
+  <script src="template html/header.js"></script>
+  <script src="template html/footer.js"></script>
   <!-- END INCLUDE TEMPLATE HTML -->
   <!-- CSS SRC -->
   <link rel="stylesheet" href="../css/base.css" />
@@ -34,10 +35,12 @@
 
 <body>
   <header id="header"></header>
-
+  <footer id="footer"></footer>
     <script>
       const header = document.getElementById('header');
+      const footer = document.getElementById('footer');
       header.innerHTML = createHeader();
+      footer.innerHTML = createFooter();
     </script>
 </body>
 

@@ -62,6 +62,7 @@
     display: inline-block;
     border-radius: 50%;
     text-align: center;
+    line-height: 35px;
 }
 .w3l-footer-16 ul.social li a:hover {
     color: #fb811e;

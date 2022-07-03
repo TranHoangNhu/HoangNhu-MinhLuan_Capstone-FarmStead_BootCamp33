@@ -7,7 +7,7 @@ function createFooter() {
     '          <div class="col-lg-4 order-lg-1 order-3 mt-lg-0 mt-5">' +
     '' +
     '                                    <h4 class="FooterLogo">' +
-    '              <a class="logo" href="">Farmstead<i class="fa fa-leaf" aria-hidden="true"></i></a>' +
+    '              <a class="logo" href="./home.html">Farmstead<i class="fa fa-leaf" aria-hidden="true"></i></a>' +
     '            </h4>' +
     '            <p class="mt-4">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam' +
     '              eget turpis ornare, euismod ligul aeget, enenatis dui. </p>' +
@@ -15,7 +15,7 @@ function createFooter() {
     '' +
     '            <!-- copyright -->' +
     '                                    <p class="copy-text mt-5 CopyRights">© 2022              Farmstead.              All Rights Reserved |' +
-    '                                          WordPress Theme by <a href="https://w3layouts.com/">W3Layouts.                              </a>' +
+    '                                          WordPress Theme by <a href="#">W3Layouts.                              </a>' +
     '            </p>' +
     '                        <!-- //copyright -->' +
     '' +
@@ -53,19 +53,19 @@ function createFooter() {
     '' +
     '                                    <ul class="social mt-4 pt-2 FooterSocial">' +
     '' +
-    '                                          <li><a href="https://www.facebook.com/w3layouts/"><i class="fa-brands fa-facebook-f"></i></a>' +
+    '                                          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a>' +
     '              </li>' +
     '              ' +
-    '                                          <li><a href="https://in.linkedin.com/company/w3layouts"><i class="fa-brands fa-linkedin-in"></i></a>' +
+    '                                          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a>' +
     '              </li>' +
     '              ' +
-    '                                          <li><a href="https://twitter.com/W3layouts"><i class="fa-brands fa-twitter"></i></a>' +
+    '                                          <li><a href="#"><i class="fa-brands fa-twitter"></i></a>' +
     '              </li>' +
     '              ' +
-    '                                          <li><a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a>' +
+    '                                          <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a>' +
     '              </li>' +
     '              ' +
-    '                                          <li><a href="https://w3layouts.com/"><i class="fa-brands fa-github"></i></span></a>' +
+    '                                          <li><a href="#"><i class="fa-brands fa-github"></i></span></a>' +
     '              </li>' +
     '              ' +
     '            </ul>' +

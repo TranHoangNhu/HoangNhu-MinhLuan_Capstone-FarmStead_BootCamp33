@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>farmStead CapStone</title>
+  <title>Blog Posts page</title>
   <!-- CSS LIBRARY -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +21,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <!--END CSS LIBRARY -->
   <!-- INCLUDE TEMPLATE HTML -->
-  <script src="template html/header.js"></script>
-  <script src="template html/footer.js"></script>
+  <script src="template_js/header.js"></script>
+  <script src="template_js/footer.js"></script>
   <!-- END INCLUDE TEMPLATE HTML -->
   <!-- CSS SRC -->
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/animate.css" />
-  <link rel="stylesheet" href="../css/footer_layout.css" />
-  <link rel="stylesheet" href="../css/header_layout.css" />
+  <link rel="stylesheet" href="../css/header_component.css" />
+  <link rel="stylesheet" href="../css/footer_component.css" />
   <link rel="stylesheet" href="../css/page_css/blogposts.css" />
   <!--END CSS SRC -->
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="header" class="main-header fixed-top container-fluid"></header>
+  <section>
+    <h1 class="text-center pt-5 mt-5">ĐÂY LÀ TRANG BLOGPOSTS PAGE (LUAN CODE)</h1>
+  </section>
   <footer id="footer"></footer>
     <script>
-      const header = document.getElementById('header');
-      const footer = document.getElementById('footer');
+     var header = document.getElementById('header');
+     var footer = document.getElementById('footer');
       header.innerHTML = createHeader();
       footer.innerHTML = createFooter();
     </script>

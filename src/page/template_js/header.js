@@ -29,7 +29,7 @@ function createHeader() {
   '									<input type="checkbox" id="checkbox">'+
   '									<div class="mode-container">'+
   '										<i class="fa-solid fa-sun"></i>'+
-  '										<i class="fa-solid fa-moon"></i>'+
+  '										<i class="fa-solid fa-moon fs-4 px-1"></i>'+
   '									</div>'+
   '								</label>'+
   '							</div>'+

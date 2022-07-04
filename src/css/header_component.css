@@ -132,6 +132,10 @@ ul#menu label {
   text-align: center;
   margin: 0;
 }
+ul#menu input:checked~ul.submenu {
+  max-height: 400px;
+  transition: max-height 0.5s ease-in;
+}
 ul#menu label span {
   line-height: 1em;
 }
@@ -140,7 +144,7 @@ ul.submenu {
   padding: 0;
   overflow: hidden;
   list-style-type: none;
-  background: var(--bg-color);
+  background: #fff;
   transition: max-height 0.5s ease-out;
   position: absolute;
   min-width: 8em;
@@ -156,6 +160,7 @@ ul.submenu li a {
   font-size: 16px;
   font-weight: 600;
   color: #060606;
+  text-decoration: none;
 }
 ul#menu input {
   display: none;

@@ -1,0 +1,30 @@
+.GrowNaturally-grid-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.homeGrowNaturally .box-wrap img {
+    max-width: 65px;
+    display: block;
+    margin: 0 auto;
+}
+.box-wrap h4 a {
+    font-family: "Volkhov", serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+    color: #060606;
+}
+.box-wrap {
+    padding: 40px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+    background-color: #fff;
+}
+.box-wrap:hover {
+    transition: .3s;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 30%);
+}

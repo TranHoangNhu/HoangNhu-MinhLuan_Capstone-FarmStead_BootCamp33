@@ -48,3 +48,9 @@ a{
   background: #009f4d;
   color: #ffffff;
 }
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+}

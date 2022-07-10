@@ -1,0 +1,125 @@
+/*COUNTER STATS */
+.counter span.fa {
+  color: #009f4d;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background: rgb(0 159 77 / 4%);
+  font-size: 32px;
+}
+.timer {
+  font-size: 3em;
+  font-weight: 600;
+  color: #060606;
+}
+p.count-text {
+  text-transform: uppercase;
+  color: #060606;
+  font-size: 17px;
+}
+/*TEAM SECTION */
+.About_team {
+  background-color: #009f4d;
+}
+h4.title-bg-content {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  z-index: 0;
+  opacity: 0.14;
+  font-size: 12vw;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.teams-gd {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+}
+.About_team .team-member {
+    overflow: hidden;
+}
+.About_team .team-member, .About_team .team-member .team-img {
+    position: relative;
+}
+.About_team .team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgb(8 8 8 / 54%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.About_team .team-hover .desk {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-55%);
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+.About_team .team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(45%);
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+.About_team .desk h4 {
+    margin-bottom: 4px;
+}
+.About_team .desk h4 a {
+    font-family: "Volkhov", serif;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.About_team .desk p {
+    color: #fff;
+}
+.About_team .team-member .s-link a {
+    margin: 0 10px;
+    color: #1e272e;
+    font-size: 16px;
+}
+.About_team .team-title span {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 1px;
+    display: block;
+}
+.About_team .teams-gd h5 a {
+    font-weight: bold;
+    color: #060606;
+    font-size: 21px;
+}
+.About_team .desk, .About_team .desk h4, .About_team .team-hover .s-link a {
+    text-align: center;
+    color: #1e272e;
+}
+.About_team .team-member:hover .team-hover, .About_team .team-member:hover .team-hover .desk, .About_team .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.About_team .team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+.About_team .s-link span.fa {
+    color: #fff;
+}
+.About_team .teams-gd a:hover, .About_team .s-link span.fa:hover {
+    color: #fb811e;
+}
+.About_team .team-member:hover .team-hover .desk {
+    top: 35%;
+}

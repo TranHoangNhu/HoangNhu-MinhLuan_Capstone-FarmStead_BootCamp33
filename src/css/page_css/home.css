@@ -145,3 +145,12 @@ a.service-heading:hover {
     line-height: 25px;
     font-weight: 600;
 }
+.index-product .feature-unit:hover, .index-product .feature-unit.active {
+    border: 1px solid #d2d2d2;
+    transition: 0.3s ease-in;
+    background: #fff;
+}
+.index-product .features15-para h4:hover {
+    transition: 0.3s ease-in-out;
+    color: #009f4d;
+}

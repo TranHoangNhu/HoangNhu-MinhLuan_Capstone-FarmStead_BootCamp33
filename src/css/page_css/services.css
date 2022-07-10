@@ -1,0 +1,26 @@
+/* INDEX-SECTION */
+.services_index .area-box {
+    padding: 50px 35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+}
+.services_index .area-box:hover {
+    transition: .3s;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 17%);
+}
+.services_index .area-box i {
+    font-size: 45px;
+    color: #fb811e;
+}
+.services_index h4 a.title-head {
+    margin-top: 25px;
+    display: block;
+    color: #060606;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 0;
+}

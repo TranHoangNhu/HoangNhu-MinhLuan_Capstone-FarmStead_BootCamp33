@@ -34,7 +34,245 @@
 </head>
 
 <body>
-  <header id="header" class="main-header fixed-top container-fluid"></header>
+  <style>
+    span.w3l-icon.-back span.fa {
+      position: static;
+      color: #e6ebff;
+    }
+
+    #w3lDemoBar.w3l-demo-bar {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      padding: 40px 5px 10px;
+      padding-top: 70px;
+      background: #0D1326;
+      border-top-left-radius: 9px;
+      border-bottom-left-radius: 9px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar a {
+      display: block;
+      color: #e6ebff;
+      text-decoration: none;
+      line-height: 24px;
+      opacity: .6;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #w3lDemoBar.w3l-demo-bar span.w3l-icon {
+      display: block;
+    }
+
+    #w3lDemoBar.w3l-demo-bar a:hover {
+      opacity: 1;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+      color: #e6ebff;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 30px;
+      border-top: 1px solid #41414d;
+      padding-top: 40px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .demo-btns {
+      border-top: 1px solid #41414d;
+      padding-top: 30px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+      font-size: 26px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+      margin-bottom: 0;
+    }
+
+    .toggle-right-sidebar span {
+      background: #0D1326;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #e6ebff;
+      border-radius: 50px;
+      font-size: 26px;
+      cursor: pointer;
+      opacity: .5;
+    }
+
+    .pull-right-demo-bar {
+      float: right;
+      position: fixed;
+      right: 0px;
+      top: 150px;
+      width: 90px;
+      z-index: 99999;
+      text-align: center;
+    }
+
+    /* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+    #right-sidebar {
+      width: 90px;
+      position: fixed;
+      z-index: 1000;
+      right: 0px;
+      top: 0;
+      margin-top: 140px;
+      transition: all .5s ease-in-out;
+      overflow-y: auto;
+    }
+
+
+    /* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+    .hide-right-bar-notifications {
+      margin-right: -300px !important;
+      transition: all .3s ease-in-out;
+    }
+
+
+
+    @media (max-width: 992px) {
+      #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+        display: none;
+
+      }
+    }
+
+    @media (max-width: 767px) {
+      #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+        display: none;
+
+      }
+    }
+
+    @media (max-width: 568px) {
+      #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+        display: none;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .responsive-icons {
+        margin-top: 0px;
+        border-top: none;
+        padding-top: 0px;
+      }
+
+      #right-sidebar,
+      .pull-right-demo-bar {
+        width: 90px;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+  <header id="header" class="main-header fixed-top"></header>
+  <!-- <section class="w3l-banner">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-5 banner-left HomePageHeroHeader">
+          <div class="banner-left-content">
+            <h2 class="farm-text">
+              Farm</h2>
+            <div class="bann-contents">
+              <h3 class="mb-sm-4 mb-2">Welcome to Farmstead <br>
+                where Natural Food is born!</h3>
+              <p class="banner-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium. </p>
+              <a class="btn btn-style mt-sm-5 mt-4" href="about">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 banner-right p-0 ml-auto">
+          <div id="homepage-slider" class="st-slider">
+
+            <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="">
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide1">
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide2">
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide3">
+
+            <div class="images">
+              <div class="images-inner">
+
+                <div class="image-slide">
+                  <div class="banner-w3ls-1">
+                    <style>
+                      .banner-w3ls-1 {
+                        background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/b1.jpg);
+                      }
+                    </style>
+                    <div class="wrapper">
+                      <div class="slider-num d-grid grid-columns-auto">
+                        <h4>01<span>/03</span></h4>
+                        <p>
+                          Agriculture </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="image-slide">
+                  <div class="banner-w3ls-2">
+                    <style>
+                      .banner-w3ls-2 {
+                        background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/b8.jpg);
+                      }
+                    </style>
+                    <div class="wrapper">
+                      <div class="slider-num d-grid grid-columns-auto">
+                        <h4>02<span>/03</span></h4>
+                        <p>
+                          Farm Field </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="image-slide">
+                  <div class="banner-w3ls-3">
+                    <style>
+                      .banner-w3ls-3 {
+                        background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/b4.jpg);
+                      }
+                    </style>
+                    <div class="wrapper">
+                      <div class="slider-num d-grid grid-columns-auto">
+                        <h4>03<span>/03</span></h4>
+                        <p>
+                          Organic Farm </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="labels">
+              <div class="fake-radio">
+                <label for="slide1" class="radio-btn"></label>
+                <label for="slide2" class="radio-btn"></label>
+                <label for="slide3" class="radio-btn"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
   <section class="container py-md-5 py-4 homeGrowNaturally">
     <div class="row align-items-center">
       <div class="col-lg-6 GrowNaturally-grid-left pr-lg-5">
@@ -324,7 +562,7 @@
 
     </div>
   </section>
-  <div class="gallery section-agile py-5">
+  <section class="gallery section-agile py-5">
     <div class="container py-md-5 py-4 HomePageGallery">
       <div class="row gallery_grids no-gutters">
         <div class="col-lg-3 col-6 gallery-img-grid gallery_grid1 hover14 column">
@@ -339,11 +577,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery1.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="0" data-index="0">
+            <a href="../img/home-page/Home_gallery1.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="0"
+              data-index="0">
               <figure>
-                <img src="../img/home-page/Home_gallery1.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery1.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Fresh Carrots</h5>
               </figure>
@@ -352,11 +589,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery2.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="1" data-index="1">
+            <a href="../img/home-page/Home_gallery2.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="1"
+              data-index="1">
               <figure>
-                <img src="../img/home-page/Home_gallery2.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery2.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Strawberry</h5>
               </figure>
@@ -365,11 +601,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery3.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="2" data-index="2">
+            <a href="../img/home-page/Home_gallery3.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="2"
+              data-index="2">
               <figure>
-                <img src="../img/home-page/Home_gallery3.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery3.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Our Farm</h5>
               </figure>
@@ -378,11 +613,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery4.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="3" data-index="3">
+            <a href="../img/home-page/Home_gallery4.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="3"
+              data-index="3">
               <figure>
-                <img src="../img/home-page/Home_gallery4.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery4.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Fresh Apples</h5>
               </figure>
@@ -391,11 +625,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery5.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="4" data-index="4">
+            <a href="../img/home-page/Home_gallery5.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="4"
+              data-index="4">
               <figure>
-                <img src="../img/home-page/Home_gallery5.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery5.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Awesome Fields</h5>
               </figure>
@@ -404,11 +637,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery6.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="5" data-index="5">
+            <a href="../img/home-page/Home_gallery6.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="5"
+              data-index="5">
               <figure>
-                <img src="../img/home-page/Home_gallery6.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery6.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Fresh Grapes</h5>
               </figure>
@@ -417,11 +649,10 @@
         </div>
         <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
           <div class="gallery_effect">
-            <a href="../img/home-page/Home_gallery7.jpg"
-              class="js-img-viwer d-block" data-group="nogroup" data-id="6" data-index="6">
+            <a href="../img/home-page/Home_gallery7.jpg" class="js-img-viwer d-block" data-group="nogroup" data-id="6"
+              data-index="6">
               <figure>
-                <img src="../img/home-page/Home_gallery7.jpg" alt=" "
-                  class="img-fluid">
+                <img src="../img/home-page/Home_gallery7.jpg" alt=" " class="img-fluid">
                 <h5 class="gall-text">
                   Hot Papper</h5>
               </figure>
@@ -431,7 +662,7 @@
 
       </div>
     </div>
-  </div>
+  </section>
   <section class="HomePageCover">
     <div class="cusrtomer-layout py-lg-5">
       <div class="container py-md-5 py-4 AboutPageTestimonials">
@@ -596,6 +827,41 @@
     });
   </script>
   <!-- END GALLERY -->
+  <!-- MENU-JS -->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#header").addClass("nav-fixed");
+      } else {
+        $("#header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- EN MENU JS -->
   <div data-id="L5FIUPGFARR87">
     <div class="smartphoto" aria-hidden="true" role="dialog">
       <div class="smartphoto-body">

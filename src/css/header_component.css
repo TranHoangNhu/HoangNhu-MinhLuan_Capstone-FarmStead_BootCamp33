@@ -1,5 +1,5 @@
 header.main-header {
-  background-color: #ccc;
+  background-color: transparent;
   /* background-color: transparent; */
   padding: 0px;
   transition: all 0.4s ease 0s;
@@ -7,6 +7,21 @@ header.main-header {
   display: grid;
   align-items: center;
   /* box-shadow: 0 3px 9px rgb(0 0 0 / 5%); */
+}
+header.nav-fixed {
+  padding: 0px;
+  border-bottom: none;
+  z-index: 99 !important;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+  height: 70px;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 .navbar {
   justify-content: space-between;
@@ -25,6 +40,12 @@ header.main-header {
   left: 55px;
   font-size: 20px;
 }
+.nav-fixed .navbar-brand {
+  color: #060606;
+}
+.fa-leaf:before {
+  content: "";
+}
 .navbar .search-right {
   margin: 0 10px 0 10px;
 }
@@ -34,13 +55,17 @@ header.main-header {
   padding: 0 10px;
   width: 35px;
   height: 35px;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
   border-radius: 10em;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
+}
+#demo-2 input[type=search]:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  padding-right: 15px;
 }
 .w3l-breadcrumb {
   display: block;
@@ -77,6 +102,8 @@ ul.breadcrumbs-custom-path a {
   height: 24px;
   padding: 0px 0;
   margin-left: 10px;
+}
+.nav-fixed .mode-container {
   color: #fff;
 }
 .mode-container i.fa-sun {
@@ -86,16 +113,9 @@ ul.breadcrumbs-custom-path a {
   display: block;
   cursor: pointer;
 }
-/* .fa-moon:after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 18px;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 2px;
-  top: 8px;
-  left: 2px;
-} */
+.nav-fixed .fa-moon, .nav-fixed .fa-moon:after {
+  color: #060606;
+}
 .mode-container:hover {
   color: #fb811e;
 }
@@ -107,14 +127,16 @@ ul.breadcrumbs-custom-path a {
 }
 ul#menu {
   margin: 0;
-  color: #fff;
   z-index: 99;
   font-size: 29px;
+}
+ul#menu:hover {
+  color: #fb811e;
 }
 nav ul li {
   text-align: center;
 }
-ul#menu>li {
+ul#menu > li {
   float: left;
   list-style-type: none;
   position: relative;
@@ -132,7 +154,7 @@ ul#menu label {
   text-align: center;
   margin: 0;
 }
-ul#menu input:checked~ul.submenu {
+ul#menu input:checked ~ ul.submenu {
   max-height: 400px;
   transition: max-height 0.5s ease-in;
 }

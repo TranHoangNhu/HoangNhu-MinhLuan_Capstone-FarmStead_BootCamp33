@@ -34,7 +34,7 @@
 </head>
 
 <body>
-  <header id="header" class="main-header fixed-top container-fluid"></header>
+  <header id="header" class="main-header fixed-top"></header>
   <section>
     <h1 class="text-center pt-5 mt-5">ĐÂY LÀ TRANG LANDING PAGE (LUAN CODE)</h1>
   </section>
@@ -50,6 +50,41 @@
   <!-- jquery CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- END jquery CDN -->
+    <!-- MENU-JS -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+  
+        if (scroll >= 80) {
+          $("#header").addClass("nav-fixed");
+        } else {
+          $("#header").removeClass("nav-fixed");
+        }
+      });
+  
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        $('.navbar-toggler').click(function () {
+          $('body').toggleClass('noscroll');
+        })
+      });
+    </script>
+    <!-- EN MENU JS -->
 </body>
 
 </html>

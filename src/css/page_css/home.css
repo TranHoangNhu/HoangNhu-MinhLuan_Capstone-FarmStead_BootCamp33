@@ -1,3 +1,104 @@
+/* SECTION HERO-BANNER */
+.banner-left {
+  position: absolute;
+  left: 10em;
+  z-index: 1;
+}
+.banner-left h2 {
+  color: #f4f4f4;
+  font-size: 120px;
+  font-weight: bold;
+  margin-left: -0.5em;
+}
+.w3l-banner h3 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+}
+p.banner-text {
+  font-size: 20px;
+}
+.st-slider {
+  position: relative;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.w3l-banner .images {
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+}
+.st-slider > #play1:checked ~ .images .images-inner {
+  animation: slide 12300ms infinite;
+}
+.image-slide,
+.fake-radio,
+.radio-btn {
+  transition: all 0.5s ease-out;
+}
+.image-slide {
+  width: 20%;
+  float: left;
+}
+.banner-w3ls-1,
+.banner-w3ls-2,
+.banner-w3ls-3 {
+  background-size: cover;
+  min-height: 100vh;
+  padding: 40px 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: center;
+  border-bottom-left-radius: 0px;
+  z-index: 3;
+}
+.banner-w3ls-1:before,
+.banner-w3ls-2:before,
+.banner-w3ls-3:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 17%);
+  z-index: -1;
+  top: 0;
+}
+.banner-w3ls-1 .slider-num {
+  margin-right: 1em;
+}
+.banner-w3ls-1 .slider-num h4 {
+  color: #fff;
+}
+.banner-w3ls-1 .slider-num p {
+  color: #fff;
+}
+.banner-w3ls-1 .fake-radio {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+}
+.banner-w3ls-1 .radio-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block !important;
+  margin: 0px 4px;
+  cursor: pointer;
+}
 /* SECTION GrowNaturally */
 .GrowNaturally-grid-right {
   display: grid;
@@ -174,16 +275,19 @@ a.service-heading:hover {
   left: -75%;
   z-index: 2;
   display: block;
-  content: '';
+  content: "";
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   transform: skewX(-17deg);
   transition-duration: 2s;
 }
-.hover14 figure:hover::before
-{
-  left:500%;
+.hover14 figure:hover::before {
+  left: 500%;
 }
 .column .gallery_effect img {
   width: 100%;
@@ -216,10 +320,10 @@ h5.gall-text {
   opacity: 1;
   font-family: sans-serif;
   cursor: pointer;
-  transition: opacity .3s ease-out;
+  transition: opacity 0.3s ease-out;
   transition: all 0.3s ease-out;
   animation-name: smartphoto;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
 .smartphoto-body {
@@ -257,7 +361,7 @@ h5.gall-text {
 }
 .smartphoto-count {
   display: inline-block;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
 }
 .smartphoto-caption {
@@ -270,7 +374,7 @@ h5.gall-text {
   height: 50px;
   padding: 0 50px;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   text-align: center;
   line-height: 50px;
@@ -289,7 +393,7 @@ h5.gall-text {
   background-color: transparent;
   background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI4MzQuNjUgMjgzNC42NSIgZmlsbD0iI0ZGRiI+PHRpdGxlPmljb248L3RpdGxlPjxwYXRoIGQ9Ik0xNTc2LjQyLDE0MDYuNzYsMjc4NCwxOTkuMTlhNTYuODYsNTYuODYsMCwwLDAsMC04MC4xOGwtNzguOTItNzguOTJhNTYuODYsNTYuODYsMCwwLDAtODAuMTgsMEwxNDE3LjMyLDEyNDcuNjYsMjA5Ljc1LDQwLjA5YTU2Ljg2LDU2Ljg2LDAsMCwwLTgwLjE4LDBMNTAuNjUsMTE5YTU2Ljg2LDU2Ljg2LDAsMCwwLDAsODAuMThMMTI1OC4yMywxNDA2Ljc2LDUwLjY1LDI2MTQuMzRhNTYuODYsNTYuODYsMCwwLDAsMCw4MC4xOGw3OC45Miw3OC45MmE1Ni44Niw1Ni44NiwwLDAsMCw4MC4xOCwwTDE0MTcuMzIsMTU2NS44NiwyNjI0LjksMjc3My40NGE1Ni44Niw1Ni44NiwwLDAsMCw4MC4xOCwwbDc4LjkyLTc4LjkyYTU2Ljg2LDU2Ljg2LDAsMCwwLDAtODAuMThaIi8+PC9zdmc+);
   text-shadow: 0 1px 0 #fff;
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   text-decoration: none;
   cursor: pointer;
@@ -325,7 +429,7 @@ h5.gall-text {
   left: 0;
   opacity: 1;
   animation-name: smartphoto-appear;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
 .smartphoto-nav {
@@ -335,7 +439,7 @@ h5.gall-text {
   width: 100%;
   opacity: 1;
   animation-name: smartphoto-appear;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
 .smartphoto-nav ul {
@@ -360,7 +464,7 @@ h5.gall-text {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   background-position: center center;
   background-size: cover;
 }

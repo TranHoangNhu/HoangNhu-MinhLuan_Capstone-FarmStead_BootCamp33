@@ -34,7 +34,7 @@
 </head>
 
 <body>
-  <header id="header" class="main-header fixed-top container-fluid"></header>
+  <header id="header" class="main-header fixed-top"></header>
   <section>
   </section>
   <section class="services_index py-5">
@@ -219,6 +219,41 @@
   <!-- COUNTER -->
   <script src="../js/lib/counter.js"></script>
   <!-- END COUNTER -->
+    <!-- MENU-JS -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+  
+        if (scroll >= 80) {
+          $("#header").addClass("nav-fixed");
+        } else {
+          $("#header").removeClass("nav-fixed");
+        }
+      });
+  
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        $('.navbar-toggler').click(function () {
+          $('body').toggleClass('noscroll');
+        })
+      });
+    </script>
+    <!-- EN MENU JS -->
 </body>
 
 </html>

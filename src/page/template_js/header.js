@@ -48,8 +48,6 @@ function createHeader() {
   '<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13 current_page_item menu-item-32"><a class="py-2" href="./services.html" aria-current="page">Services</a></li>'+
   '<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a class="py-2" href="./blog_posts.html">Blog Posts</a></li>'+
   '<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a class="py-2" href="./landing_page.html">Landing page</a></li>'+
-  '<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a class="py-2" href="https://wp.w3layouts.com/farmstead/elements-page/">Elements page</a></li>'+
-  '<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a class="py-2" href="https://wp.w3layouts.com/farmstead/404-page/">404 page</a></li>'+
   '<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a class="py-2" href="./contact.html">Contact</a></li>'+
   '</ul>'+
   ''+

@@ -4,7 +4,7 @@ function createHeader() {
   ''+
   '												'+
   '				<h1>'+
-  '					<a class="navbar-brand index-responsive-color d-flex align-items-center" href="./home.html">'+
+  '					<a class="navbar-brand index-responsive-color d-flex align-items-center" href="https://wp.w3layouts.com/farmstead/">'+
   '						Farmstead <i class="fa fa-leaf" aria-hidden="true"></i> </a>'+
   '				</h1>'+
   ''+

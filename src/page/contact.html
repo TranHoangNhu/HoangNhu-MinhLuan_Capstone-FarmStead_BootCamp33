@@ -34,20 +34,79 @@
 </head>
 
 <body>
-  <header id="header" class="main-header fixed-top container-fluid"></header>
+  <header id="header" class="main-header fixed-top"></header>
   <section>
     <h1 class="text-center pt-5 mt-5">ĐÂY LÀ TRANG CONTACT PAGE (LUAN CODE)</h1>
   </section>
   <footer id="footer"></footer>
+  <!-- JS TEMPLATE COMPONENT -->
   <script>
     var header = document.getElementById('header');
     var footer = document.getElementById('footer');
     header.innerHTML = createHeader();
     footer.innerHTML = createFooter();
   </script>
-  <script src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/js/jquery-3.3.1.min.js"></script>
-  <script src="../js/theme-change.js"></script>
-  <script src="../js/menu.js"></script>
+  <!-- END JS TEMPLATE COMPONENT -->
+  <!-- jquery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- END jquery CDN -->
+    <!-- MENU-JS -->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+  
+        if (scroll >= 80) {
+          $("#header").addClass("nav-fixed");
+        } else {
+          $("#header").removeClass("nav-fixed");
+        }
+      });
+  
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        $('.navbar-toggler').click(function () {
+          $('body').toggleClass('noscroll');
+        })
+      });
+    </script>
+  <!-- END MENU JS -->
+  <!-- MOVE TOP -->
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+  
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- END MOVE TOP -->
 </body>
 
 </html>

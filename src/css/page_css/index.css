@@ -74,7 +74,6 @@ body
   padding-top: 50px;
 }
 .title_welcome h1 {
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 800;
   font-size: 70px;
 }
@@ -84,7 +83,6 @@ body
   z-index: 10;
 }
 .content_creator h3 {
-  font-family: "Volkhov", serif;
   color: #111222;
   font-size: 1.3em;
   font-weight: 900;

@@ -78,11 +78,35 @@ a.navbar-brand:hover,
   box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 .w3l-footer-16 .w3l-footer-16-main h3 {
-  font-family: "Volkhov", serif;
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 30px;
   font-weight: 600;
   text-transform: uppercase;
   color: #060606;
+}
+#movetop {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 9;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #009f4d;
+  border-radius: 4px;
+  padding: 0;
+}
+#movetop:hover {
+  opacity: .8;
+}
+#movetop .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
 }

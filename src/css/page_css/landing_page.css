@@ -1,0 +1,27 @@
+
+
+.welcome .content{
+    max-width: 50%;
+}
+
+.welcome img{
+    border-radius: 18px;
+    max-width: 50%;
+    margin-bottom: 200px;
+}
+
+
+
+.welcome .content h5{
+    font-size: 22px;
+    color: #fb811e;
+}
+.welcome .content h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600; 
+}
+.welcome .content p{
+    color: #707070;
+    font-size: 18px;
+}

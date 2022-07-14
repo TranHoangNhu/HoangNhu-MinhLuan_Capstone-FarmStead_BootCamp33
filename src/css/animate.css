@@ -27,3 +27,9 @@
     right: 0;
   }
 }
+@-webkit-keyframes slide {
+  0% { margin-left: 0; }
+  50% { margin-left: -100%; }
+  100% { margin-left: -200%; }
+}
+

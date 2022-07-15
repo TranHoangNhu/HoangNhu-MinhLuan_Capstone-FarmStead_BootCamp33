@@ -110,6 +110,80 @@
     color: #727272;
 }
 
+.comment {
+    padding: 80px 0;
+}
+.comment .left,
+.comment .right{
+    width: 50%;
+    
+}
+.comment .left{
+    padding-top: 100px;
+}
+.comment .left .title h5{
+    font-size: 22px;
+    color: #fb811e;
+}
+.comment .left .title h3{
+    font-size: 42px;
+    font-weight: 600;
+}
+.comment .left .title p{
+    margin-top: 20px;
+}
+.comment .left p{
+    color: #727272;
+}
+.comment .left .detail_left,
+.comment .left .detail_right{
+    display: flex;
+    width: 50%;
+    padding: 60px 60px 60px 10px;
+}
+.comment .left span{
+    color: #fb811e;
+    font-size: 30px;
+}
+.comment .left .content{
+    margin:0 10px ;
+}
+.comment .left .content h4{
+    font-weight: 600;
+}
+.comment .right{
+    position: relative;
+}
+.comment .right img{
+    border-radius: 40px;
+    width: 70%;
+    margin-left: 190px;
+}
+.comment .right .years{
+    background-color: #fb811e;
+    color: #ffffff;
+    width: 300px;
+    height: 180px;
+    position:absolute;
+    left:120px;
+    bottom: 50px;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 0 0 100px 0;
+
+}
+.comment .right .years h6{
+    font-size: 80px;
+    font-weight:600;
+    line-height: 75px;
+}
+.comment .right .years p{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+
 
 
 

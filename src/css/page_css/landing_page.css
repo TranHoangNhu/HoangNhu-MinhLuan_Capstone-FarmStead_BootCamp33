@@ -9,9 +9,6 @@
     max-width: 50%;
     margin-bottom: 200px;
 }
-
-
-
 .welcome .content h5{
     font-size: 22px;
     color: #fb811e;
@@ -25,3 +22,95 @@
     color: #707070;
     font-size: 18px;
 }
+.welcome .content button{
+    background-color: #fb811e;
+    font-weight: 600;
+    color: #eeeeee;
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    border: #fb811e;
+    transition: all 0.5s;
+}
+.welcome .content button:hover{
+    background-color: #009f4d ;
+    color: #eeeeee;
+}
+
+.services {
+    background-color: #009f4d ;
+    padding:100px 0;
+}
+
+.services .title h4{
+    font-size: 160px;
+    color: #f1efef;
+    z-index: 0;
+    position: absolute;
+    left: 450px;
+    opacity: 0.15;
+    font-weight: 600;
+}
+.services .title .left,
+.services .title .right{
+    width: 50%;
+    z-index: 10;
+    color: #ffffff;
+    margin:20px 0 60px 0;
+}
+.services .title .left h5{
+    font-size: 22px;
+}
+.services .title .left h3{
+    font-size: 42px;
+    font-weight: 600;
+}
+.services .title .right p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 50px 0 50px;
+}
+.services .item {
+    width: 33.3%;
+}
+.services .item .card {
+    background-color: #009f4d ;
+    border: 0px;
+    
+}
+.services .item .card img{
+    border-radius: 20px 20px 0 0;
+}
+.services .item .card .detail{
+    background-color: #ffffff;
+    border-radius:0 0 20px 20px ;
+    padding:30px;
+}
+.services .item .card .detail span{
+    padding: 8px 15px;
+    border-radius: 15px;
+    color : #009f4d;
+    font-weight: 500;
+    background-color: #ddefe3;
+}
+.services .item .card .detail a {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    display: block;
+    margin: 15px 0;
+    transition: all 0.5s;
+}
+.services .item .card .detail a:hover{
+    color : #009f4d;
+
+}
+
+.services .item .card .detail p {
+    color: #727272;
+}
+
+
+
+
+

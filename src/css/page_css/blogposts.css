@@ -30,7 +30,7 @@
 }
 .blog_detail .by{
     color: #fb811e;
-    text-decoration: none
+    text-decoration: none;
 }
 .blog_detail .desc{
     font-size: 22px;
@@ -55,8 +55,6 @@
     background-color: #009f4d ;
     color: #eeeeee;
 }
-
-
 .blog_right{
     max-width: 33%;
     padding: 0 70px;
@@ -65,12 +63,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 .blog_right a{
     /* text-decoration: none; */
     color: black;
-    
 }
 .blog_right h2{
     font-weight: 650;
@@ -143,7 +139,6 @@
 .blog_page a:hover{
     transition: all 0.5s;
 }
-
 .blog_page a:hover{
     background-color: #009f4d ;
     color: #eeeeee;

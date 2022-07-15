@@ -44,12 +44,18 @@
 .blog_detail button{
     background-color: #fb811e;
     font-weight: 600;
-    color: white;
+    color: #eeeeee;
     width: 130px;
     height: 50px;
     border-radius: 25px;
     border: #fb811e;
+    transition: all 0.5s;
 }
+.blog_detail button:hover{
+    background-color: #009f4d ;
+    color: #eeeeee;
+}
+
 
 .blog_right{
     max-width: 33%;
@@ -62,8 +68,9 @@
 
 }
 .blog_right a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: black;
+    
 }
 .blog_right h2{
     font-weight: 650;
@@ -87,7 +94,6 @@
 .blog_right .recentcomments{
     padding: 10px 0;
 }
-
 .blog_right .right_comments a{
     color: #fb811e;
     font-weight: 600;
@@ -97,6 +103,7 @@
 .blog_right .right_meta{
     /* border-bottom: 1px solid #eeeeee; */
     line-height: 40px;
+    margin-top: 20px;
 }
 .blog_right .right_posts li,
 .blog_right .right_archives ul,
@@ -105,9 +112,40 @@
     border-bottom: 1px solid #eeeeee;
 
 }
-
-.blog_page1 {
-    font-size: 
+.blog_page ul{
+    list-style: none;
+}
+.blog_page span,
+.blog_page .part,
+.blog_page .next{
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50%;
+    /* border: 1px solid green; */
+    padding: 10px 17px;
+    /* background-color: #009f4d ;
+    color: #eeeeee; */
+}
+.blog_page span{
+    background-color: #009f4d ;
+    color: #eeeeee;
+}
+.blog_page .part,
+.blog_page .next{
+    color: #060606;
+}
+.trans{
+    transition: all 0.5s;
+}
+.trans:hover{
+    color: #fb811e;
+}
+.blog_page a:hover{
+    transition: all 0.5s;
 }
 
+.blog_page a:hover{
+    background-color: #009f4d ;
+    color: #eeeeee;
+}
 

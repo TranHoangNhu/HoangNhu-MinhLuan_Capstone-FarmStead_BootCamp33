@@ -1,14 +1,15 @@
 /* BACKGROUND-ANIMATION */
-body
-{
-  overflow: hidden;
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #198754af 0%, #fb811e9f 100%);
 }
 .body__background {
   background: url(../../img/welcome-page/bg-gradient.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 1920px;
-  height: 97vh;
+  height: 100vh;
   z-index: 1;
 }
 .welcome_grass,
@@ -65,10 +66,12 @@ body
 /* END-BACKGROUND-ANIMATION */
 .container_welcome {
   padding-top: 50px;
-  z-index: 9;
+  z-index: 0;
 }
 .title_welcome {
-  width: 90%;
+  position: absolute;
+  top: 20px;
+  left: 40%;
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
@@ -76,6 +79,76 @@ body
 .title_welcome h1 {
   font-weight: 800;
   font-size: 70px;
+}
+.title_welcome .navbar .navbar-brand,
+.title_welcome .w3l-footer-16 a.logo {
+  font-family: "Volkhov", serif;
+  font-size: 60px;
+  color: #fb811e;
+  padding: 0px;
+  position: relative;
+  left: 10%;
+}
+.title_welcome .navbar .navbar-brand i,
+.title_welcome .w3l-footer-16 a.logo i {
+  position: absolute;
+  top: -10px;
+  left:  100px;
+  font-size: 30px;
+}
+/* BIRD FLY */
+.bird {
+  z-index: 10;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+}
+.bird--one {
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+}
+.bird--two {
+  animation-duration: 0.9s;
+  animation-delay: -0.75s;
+}
+.bird--three {
+  animation-duration: 1.25s;
+  animation-delay: -0.25s;
+}
+.bird--four {
+  animation-duration: 1.1s;
+  animation-delay: -0.5s;
+}
+.bird-container {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.bird-container--one {
+  animation-duration: 15s;
+  animation-delay: 0;
+}
+.bird-container--two {
+  animation-duration: 16s;
+  animation-delay: 1s;
+}
+.bird-container--three {
+  animation-duration: 14.6s;
+  animation-delay: 9.5s;
+}
+.bird-container--four {
+  animation-duration: 16s;
+  animation-delay: 10.25s;
 }
 /* CONTENT-CREATOR */
 .nhu_content_creator,
@@ -143,7 +216,7 @@ body
 /* NAV-FARMSTEAD */
 .nav_FarmStead .wrapper li {
   z-index: 10;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .wrapper .icon {
   position: relative;
@@ -152,16 +225,16 @@ body
   padding: 8px 18px;
   margin: 10px;
   font-size: 16px;
-  opacity: .8;
+  opacity: 0.8;
   line-height: 25px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon a{
- text-decoration: none;
- font-weight: bold;
- color: rgb(81, 81, 81);
+.wrapper .icon a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(81, 81, 81);
 }
 .wrapper .tooltip {
   position: absolute;
@@ -207,10 +280,10 @@ body
 .wrapper .create_by_nhu:hover .tooltip,
 .wrapper .create_by_nhu:hover .tooltip::before {
   background-image: radial-gradient(
-  circle farthest-corner at 10% 20%,
-  rgba(255, 209, 67, 1) 0%,
-  rgba(255, 145, 83, 1) 90%
-);
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
   color: #ffffff;
 }
 

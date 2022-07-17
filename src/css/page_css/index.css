@@ -1,5 +1,6 @@
 /* BACKGROUND-ANIMATION */
 body {
+  overflow-x: hidden;
   background-image: linear-gradient(90deg, #198754af 0%, #fb811e9f 100%);
 }
 .body__background {
@@ -294,8 +295,9 @@ body {
 }
 /* END-NAV-FARMSTEAD */
 /* PARRALLAX SCROLLING */
-.content-wrapper {
-  height: 1200px;
+.content-wrapper
+{
+  max-width: px;
 }
 
 .parallax,
@@ -327,10 +329,6 @@ body {
 .content {
   font-size: 6rem;
   transform: translateZ(1px) scale(0.5);
-}
-.sub-content {
-  font-size: 2rem;
-  text-align: center;
 }
 .sub-content a {
   color: inherit;

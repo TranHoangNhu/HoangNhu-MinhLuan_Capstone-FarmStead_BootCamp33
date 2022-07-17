@@ -10,8 +10,10 @@ window.addEventListener("scroll", function () {
   if (value > 700) {
     titleGreen.classList.add("text-white");
     titleOrange[0].classList.add("text-white");
+    title.style.setProperty("z-index", "1000");
   } else {
     titleGreen.classList.remove("text-white");
     titleOrange[0].classList.remove("text-white");
+    title.style.setProperty("z-index", "2");
   }
 });

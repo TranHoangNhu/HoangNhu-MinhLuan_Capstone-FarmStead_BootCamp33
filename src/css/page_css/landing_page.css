@@ -182,6 +182,32 @@
     font-weight: 600;
     
 }
+.information .tem{
+    width: 33.33333%;
+    height: 180px;
+}
+
+.information .tem .card{
+    border: 1px solid red;
+    padding: 0 50px;
+    display: flex !important;
+    
+
+}
+
+.information img{
+    width: 50px;
+    border: 1px solid red;
+
+
+}
+
+.information .content {
+    display: flexbox;
+    border: 1px solid red;
+
+
+}
 
 
 

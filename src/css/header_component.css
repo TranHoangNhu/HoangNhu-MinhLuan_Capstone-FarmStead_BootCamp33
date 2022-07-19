@@ -59,13 +59,14 @@ header.nav-fixed {
   transition: all 0.5s;
   cursor: pointer;
 }
-#demo-2 input[type=search]:focus {
+#demo-2 input[type="search"]:focus {
   width: 200px;
   padding-left: 32px;
   color: #000;
   background-color: #fff;
   cursor: auto;
   padding-right: 15px;
+  outline: none;
 }
 .w3l-breadcrumb {
   display: block;
@@ -102,8 +103,6 @@ ul.breadcrumbs-custom-path a {
   height: 24px;
   padding: 0px 0;
   margin-left: 10px;
-}
-.nav-fixed .mode-container {
   color: #fff;
 }
 .mode-container i.fa-sun {
@@ -113,7 +112,8 @@ ul.breadcrumbs-custom-path a {
   display: block;
   cursor: pointer;
 }
-.nav-fixed .fa-moon, .nav-fixed .fa-moon:after {
+.nav-fixed .fa-moon,
+.nav-fixed .fa-moon:after {
   color: #060606;
 }
 .mode-container:hover {
@@ -122,13 +122,33 @@ ul.breadcrumbs-custom-path a {
 .fa-sun:before {
   transform: rotate(-45deg);
 }
-.fa-sun:after {
-  transform: rotate(45deg);
+.gg-sun:after,
+.gg-sun:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+.gg-moon:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid #0000;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px;
 }
 ul#menu {
   margin: 0;
-  z-index: 99;
+  color: #fff;
   font-size: 29px;
+}
+.nav-fixed ul#menu {
+  color: #060606;
 }
 ul#menu:hover {
   color: #fb811e;

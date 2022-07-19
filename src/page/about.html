@@ -35,6 +35,23 @@
 
 <body>
   <header id="header" class="main-header fixed-top"></header>
+  <div class="inner-banner">
+    <style>
+      .inner-banner {
+        background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
+      }
+    </style>
+    <section class="w3l-breadcrumb py-5">
+      <div class="container py-lg-5 py-sm-4 mt-5 ServicesPageBanner">
+        <h4 class="large-title font-weight-bold mb-2 ServicesPageBanner">
+          Services</h4>
+        <ul class="breadcrumbs-custom-path AllBreadcrumbs">
+          <a href="./home.html" rel="nofollow">Home</a>&nbsp;&nbsp;»&nbsp;&nbsp;
+          <span class="p-paragraph slug_name"></span>
+        </ul>
+      </div>
+    </section>
+  </div>
   <section class="welcome_agriculture_Farm py-5">
     <div class="container py-md-5 py-4">
       <div class="container">
@@ -389,69 +406,69 @@
   <script src="../js/lib/jquery.magnific-popup.min.js"></script>
   <script>
     $(document).ready(function () {
-        $('.popup-with-zoom-anim').magnificPopup({
-            type: 'inline',
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
 
-            fixedContentPos: false,
-            fixedBgPos: true,
+        fixedContentPos: false,
+        fixedBgPos: true,
 
-            overflowY: 'auto',
+        overflowY: 'auto',
 
-            closeBtnInside: true,
-            preloader: false,
+        closeBtnInside: true,
+        preloader: false,
 
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-zoom-in'
-        });
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
 
-        $('.popup-with-move-anim').magnificPopup({
-            type: 'inline',
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
 
-            fixedContentPos: false,
-            fixedBgPos: true,
+        fixedContentPos: false,
+        fixedBgPos: true,
 
-            overflowY: 'auto',
+        overflowY: 'auto',
 
-            closeBtnInside: true,
-            preloader: false,
+        closeBtnInside: true,
+        preloader: false,
 
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-slide-bottom'
-        });
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
     });
   </script>
   <!-- END MAGNIFIC POPUP -->
-    <!-- OWL CAROUSEL -->
-    <script src="../js/lib/owlCarousel.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#owl-demo2").owlCarousel({
-          loop: true,
-          margin: 20,
-          nav: false,
-          responsiveClass: true,
-          autoplay: false,
-          autoplayTimeout: 5000,
-          autoplaySpeed: 1000,
-          autoplayHoverPause: false,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false
-            },
-            1000: {
-              items: 1,
-              nav: false,
-              loop: false
-            }
+  <!-- OWL CAROUSEL -->
+  <script src="../js/lib/owlCarousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo2").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: false
           }
-        })
+        }
       })
-    </script>
-    <!-- END OWL CAROUSEL -->
-      <!-- MENU-JS -->
+    })
+  </script>
+  <!-- END OWL CAROUSEL -->
+  <!-- MENU-JS -->
   <script>
     $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
@@ -492,7 +509,7 @@
     window.onscroll = function () {
       scrollFunction()
     };
-  
+
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("movetop").style.display = "block";
@@ -500,7 +517,7 @@
         document.getElementById("movetop").style.display = "none";
       }
     }
-  
+
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
       document.body.scrollTop = 0;
@@ -508,6 +525,12 @@
     }
   </script>
   <!-- END MOVE TOP -->
+  <!-- ADD TEXT SLUG NAME PAGE -->
+  <script>
+    var nameSlug = document.title;
+    document.querySelector('.slug_name').innerHTML = nameSlug;
+  </script>
+  <!-- END TEXT SLUG NAME PAGE -->
 </body>
 
 </html>

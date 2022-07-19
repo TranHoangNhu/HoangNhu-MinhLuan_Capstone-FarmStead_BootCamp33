@@ -76,8 +76,9 @@ body {
   padding-top: 50px;
 }
 .title_welcome h1 {
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 80px;
 }
 .title_welcome .navbar .navbar-brand,
 .title_welcome .w3l-footer-16 a.logo {
@@ -86,7 +87,7 @@ body {
   color: #fb811e;
   padding: 0px;
   position: relative;
-  left: 10%;
+  left: 11%;
 }
 .title_welcome .navbar .navbar-brand i,
 .title_welcome .w3l-footer-16 a.logo i {
@@ -309,7 +310,6 @@ body {
   position: relative;
 }
 
-
 .static {
   height: 80vh;
   z-index: 999;
@@ -326,7 +326,7 @@ body {
   background-position: center;
 }
 
-.content {
+.content .large-title{
   font-size: 6rem;
   transform: translateZ(1px) scale(0.5);
 }

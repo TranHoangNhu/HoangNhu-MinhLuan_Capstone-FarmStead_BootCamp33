@@ -35,8 +35,23 @@
 
 <body>
   <header id="header" class="main-header fixed-top"></header>
-  <section>
-  </section>
+  <div class="inner-banner">
+    <style>
+      .inner-banner {
+        background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
+      }
+    </style>
+    <section class="w3l-breadcrumb py-5">
+      <div class="container py-lg-5 py-sm-4 mt-5 ServicesPageBanner">
+        <h4 class="large-title font-weight-bold mb-2 ServicesPageBanner">
+          Services</h4>
+        <ul class="breadcrumbs-custom-path AllBreadcrumbs">
+          <a href="./home.html" rel="nofollow">Home</a>&nbsp;&nbsp;»&nbsp;&nbsp;
+          <span class="p-paragraph slug_name"></span>
+        </ul>
+      </div>
+    </section>
+  </div>
   <section class="services_index py-5">
     <div class="container pt-md-5 pt-4 ServicesPageServices">
 
@@ -219,40 +234,40 @@
   <!-- COUNTER -->
   <script src="../js/lib/counter.js"></script>
   <!-- END COUNTER -->
-    <!-- MENU-JS -->
-    <script>
-      $(window).on("scroll", function () {
-        var scroll = $(window).scrollTop();
-  
-        if (scroll >= 80) {
-          $("#header").addClass("nav-fixed");
-        } else {
-          $("#header").removeClass("nav-fixed");
-        }
-      });
-  
-      //Main navigation Active Class Add Remove
-      $(".navbar-toggler").on("click", function () {
-        $("header").toggleClass("active");
-      });
-      $(document).on("ready", function () {
+  <!-- MENU-JS -->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#header").addClass("nav-fixed");
+      } else {
+        $("#header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
         if ($(window).width() > 991) {
           $("header").removeClass("active");
         }
-        $(window).on("resize", function () {
-          if ($(window).width() > 991) {
-            $("header").removeClass("active");
-          }
-        });
       });
-    </script>
-    <script>
-      $(function () {
-        $('.navbar-toggler').click(function () {
-          $('body').toggleClass('noscroll');
-        })
-      });
-    </script>
+    });
+  </script>
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
   <!-- END MENU JS -->
   <!-- MOVE TOP -->
   <script>
@@ -260,7 +275,7 @@
     window.onscroll = function () {
       scrollFunction()
     };
-  
+
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("movetop").style.display = "block";
@@ -268,7 +283,7 @@
         document.getElementById("movetop").style.display = "none";
       }
     }
-  
+
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
       document.body.scrollTop = 0;
@@ -276,6 +291,12 @@
     }
   </script>
   <!-- END MOVE TOP -->
+  <!-- ADD TEXT SLUG NAME PAGE -->
+  <script>
+    var nameSlug = document.title;
+    document.querySelector('.slug_name').innerHTML = nameSlug;
+  </script>
+  <!-- END TEXT SLUG NAME PAGE -->
 </body>
 
 </html>

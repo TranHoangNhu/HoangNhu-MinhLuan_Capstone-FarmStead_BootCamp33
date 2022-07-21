@@ -43,7 +43,7 @@
     background-position: -900px 0;
   }
 }
-@keyframes fly-r ight-one {
+@keyframes fly-right-one {
   0% {
     transform: scale(0.3) translateX(-10vw);
   }
